@@ -13,21 +13,48 @@
 
     <h1>우리들의 이야기</h1>
 
-    <button id="createRoom">
-      새로운 단톡방 만들기
-    </button>
+    <p class="subtitle">친구들과 함께하는 우리만의 공간 💗</p>
+
+    <button id="createRoom">새로운 단톡방 만들기</button>
 
     <div class="join">
       <input id="roomCode" placeholder="방코드">
       <input id="nickname" placeholder="닉네임">
 
-      <button id="joinRoom">
-        들어가기
-      </button>
+      <button id="joinRoom">들어가기</button>
+    </div>
+
+    <div id="chatRoom" class="chat-room">
+
+      <div class="chat-header">
+        <button id="leaveRoom">←</button>
+        <div>
+          <strong>우리들의 이야기</strong>
+          <small id="roomNumber"></small>
+        </div>
+      </div>
+
+      <div id="messages" class="messages">
+
+        <div class="message other">
+          <span class="name">우리들의 이야기</span>
+          <div class="bubble">
+            안녕! 새로운 단톡방에 들어왔어 💗
+          </div>
+        </div>
+
+      </div>
+
+      <div class="chat-input">
+        <input id="messageInput" placeholder="메시지를 입력하세요">
+        <button id="sendMessage">전송</button>
+      </div>
+
     </div>
 
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
